@@ -109,6 +109,13 @@ hashset은 해시 알고리즘 기반으로 동작한다. <br>
 
 # Map
 
+> 종류
+
+* HashMap
+* HashTable
+* LinkedHashMap
+* TreeMap
+
 > 특징
 
 - key와 value로 이루어진 자료구조
@@ -116,13 +123,6 @@ hashset은 해시 알고리즘 기반으로 동작한다. <br>
 - key값은 중복될 수 있지만 value는 중복될 수 없다.
   
 ![스크린샷 2023-12-19 오전 11 41 21](https://github.com/Youth787/SSAFY_CS_Study/assets/90955152/e0c9b1ec-1c43-47dc-8eb2-8f68f5d52c26)
-
-> 종류
-
-* HashMap
-* HashTable
-* LinkedHashMap
-* TreeMap
 
 ### HashMap
 - 일반적으로 자주 사용되는 자료구조
