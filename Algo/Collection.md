@@ -103,3 +103,51 @@ hashset은 해시 알고리즘 기반으로 동작한다. <br>
 * 입력된 키를 해시 코드로 변환한다.
 * 해시 코드를 인덱스로 한 bucket이라는 array에 해당 인덱스를 찾아 저장한다. 
 
+<br>
+
+-----
+
+# Map
+
+- key와 value로 이루어진 자료구조
+- Set과 마찬가지로 순서를 가지지 않는다.
+- key값은 중복될 수 있지만 value는 중복될 수 없다.
+  
+![스크린샷 2023-12-19 오전 11 41 21](https://github.com/Youth787/SSAFY_CS_Study/assets/90955152/e0c9b1ec-1c43-47dc-8eb2-8f68f5d52c26)
+
+* HashMap
+* HashTable
+* LinkedHashMap
+* TreeMap
+
+### HashMap
+- 일반적으로 자주 사용되는 자료구조
+```` java
+void hashMapTest() {
+    Map<Integer, String> hashMap = new HashMap<>();
+    hashMap.put(1, "one");
+    hashMap.put(2, "two");
+
+    Iterator<Integer> it = hashMap.keySet().iterator();
+    while(it.hasNext()) {
+        int key = it.next();
+        System.out.println("key: " + key + ", value: " + hashMap.get(key));
+    }
+}
+````
+```` java
+  key: 1, value: one
+  key: 2, value: two
+````
+
+### LinkedHashMap
+일반적으로 Map 자료구조는 순서를 가지지 않지만, LinkedHashMap은 들어온 순서대로 순서를 가진다. <br>
+
+### TreeMap
+이진트리로 구성되어 있고, Treeset과 같이 정렬하여 데이터를 저장하고 있다. <br>
+데이터를 저장할때 정렬하기 때문에 저장 시간이 다른 자료구조에 비해 오래걸린다. <br>
+
+
+
+
+
